@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+</head>
+<style>
+    body{
+        width:100%;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height:100vh;
+    }
+    .container{
+        width: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+margin-top:150px;
+    background: beige;
+}
+.radio1{  
+      padding: 10px;
+    margin: 0;
+    margin-top: 10px;
+
+}
+.radio2{
+    padding: 10px;
+    margin: 0;
+    margin-top: 10px;
+    margin-left: 30px;;
+
+}
+input{
+    padding:10px;
+}
+button{
+    background-color: #708c97;
+    border:1px solid white;
+    font-family: system-ui;
+    padding: 10px;
+    color: white;
+    letter-spacing: 2px;
+    border-radius: 5px;
+    font-weight: 500;
+    margin-top: 30px;
+}
+      
+
+form {
+    display: flex;
+    width: 391px;
+    background: #e6e1da9e;
+    padding: 23px;
+    flex-direction: column;
+    }
+    label{
+       margin-top: 10px;
+       font-size: 18px;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <form>
+    
+            <h2>Your basic form</h2>
+            <label>Name :</label>
+            <input type="text"/>
+            <label>Email :</label>
+            <input type="text"/>
+            <label>Password :</label>
+            <input type="text"/>
+            <label>Age :</label>
+            <div >
+            <input class="radio1" type="radio"/>
+            <label style='margin-left:10px'>Under 16</label>
+            <input class="radio2" type="radio"/>
+            <label style='margin-left:10px'> 16 or older</label>
+        </div>
+            <br/>
+
+            <h2>Your Profile</h2>
+            <label>Biography : </label>
+            <textarea></textarea>
+            <label>Courses :</label>
+            <select style="padding:10px">
+                <option>BSc Computerscience</option>
+                <option>BSc Physics</option>
+                <option>BSc chemistry</option>
+            </select>
+            <label>Intrest :</label>
+            <div>
+                <input class="radio1" type="checkbox"><label style="margin-left:10px">Engineering</label>
+                <input class='radio2' type="checkbox" /><label style="margin-left:10px">Bussiness</label>
+            </div>
+          
+            <button>SUBMIT</button>
+        </form>       
+    </div>   
+
+</body>
+</html>
